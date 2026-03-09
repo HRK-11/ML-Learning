@@ -14,7 +14,7 @@ def load_initial_graph(dataset,ax):
     elif dataset == "Multiclass":
         X,y = make_blobs(n_features=2, centers=3,random_state=2)
         ax.scatter(X.T[0], X.T[1], c=y, cmap='rainbow')
-        return X,y
+        return X,y 
 
 def draw_meshgrid():
     a = np.arange(start=X[:, 0].min() - 1, stop=X[:, 0].max() + 1, step=0.01)
